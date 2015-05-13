@@ -60,7 +60,7 @@
       <Type>blob</Type>
       <Storage>SFLASH</Storage>
       <MaxSize>0</MaxSize>
-      <url>C:\Users\user\Desktop\CC3200CloudDemo-2_FF\CC3200CloudDemo-2\flash\key\rootCA.cer</url>
+      <url>${sessionDir}/../../flash\key\rootCA.cer</url>
       <mode>
          <ModeEntry name="Rollback" checked="false"/>
          <ModeEntry name="Secured" checked="false"/>

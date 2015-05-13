@@ -10,7 +10,7 @@ This repository is compiled under "CCS 6.1.0" IDE, and use TI "CC3200SDK_1.1.0" 
 
 # Using It
 
-The first step is to flash all the needed files to the board. There is a `.ucf`
+The first step is to flash all the needed files to the board. There is a `.usf`
 file in the "flash" folder, this is a config file for TI's uniflash tool. It
 will flash the included mcu inage and all the supporting files to the sflash
 on the launch pad.

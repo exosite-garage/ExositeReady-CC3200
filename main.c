@@ -90,7 +90,7 @@
 #include "smartconfig.h"
 #include "tmp006drv.h"
 #include "bma222drv.h"
-#include "led_ring.h"
+//#include "led_ring.h"
 #include "pinmux.h"
 
 #include <typedefs.h>
@@ -158,9 +158,9 @@ void
 	read_callback(	const exosite_data_port_t *dataPort,
 					int opStatus);
 
-void
+/*void
 	subscribe_callback(	const exosite_data_port_t *dataPort,
-						int opStatus);
+						int opStatus);*/
 
 static uint8_t
 	getUuid(char *read_buffer);
@@ -1206,16 +1206,13 @@ static void ExositeTask(void *pvParameters)
 
     	exo_loop_start();
 
-    	exo_subscribe(	"ledring",
+    	/*exo_subscribe(	"ledring",
     					&curDateTime,
     					subscribe_callback);
 
-        exo_loop_start();
+        exo_loop_start();*/
 
-    	exosite_pal_get_current_date_time(&curDateTime);
-
-        //retry_delay = 5000;
-        //osi_Sleep(retry_delay);
+    	//exosite_pal_get_current_date_time(&curDateTime);
 
         counter++;
     }
@@ -1266,7 +1263,7 @@ void
     }
 }
 
-void
+/*void
 	subscribe_callback(	const exosite_data_port_t *dataPort,
 						int opStatus)
 {
@@ -1288,7 +1285,7 @@ void
     	Send24LedData(ledRingPercentage);
     	osi_Sleep(200);
     }
-}
+}*/
 
 static void
 	download_firmware()

@@ -41,8 +41,8 @@
 								<option id="com.ti.ccstudio.buildDefinitions.TMS470_5.2.compilerID.LITTLE_ENDIAN.1848846074" name="Little endian code [See 'General' page to edit] (--little_endian, -me)" superClass="com.ti.ccstudio.buildDefinitions.TMS470_5.2.compilerID.LITTLE_ENDIAN" value="true" valueType="boolean"/>
 								<option id="com.ti.ccstudio.buildDefinitions.TMS470_5.2.compilerID.INCLUDE_PATH.445712202" name="Add dir to #include search path (--include_path, -I)" superClass="com.ti.ccstudio.buildDefinitions.TMS470_5.2.compilerID.INCLUDE_PATH" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.4/include&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;C:/Users/user/Desktop/CC3200CloudDemo-2_FF/CC3200CloudDemo-2/exosite&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;C:/Users/user/Desktop/CC3200CloudDemo-2_FF/CC3200CloudDemo-2/exosite/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/exosite}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/exosite}/include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;C:/ti/CC3200SDK_1.1.0/cc3200-sdk/example/common&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;C:/ti/CC3200SDK_1.1.0/cc3200-sdk/inc&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;C:/ti/CC3200SDK_1.1.0/cc3200-sdk/simplelink/&quot;"/>

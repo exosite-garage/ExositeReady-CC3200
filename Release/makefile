@@ -11,7 +11,6 @@ ORDERED_OBJS += \
 "./device_status.obj" \
 "./gpio_if.obj" \
 "./i2c_if.obj" \
-"./led_ring.obj" \
 "./main.obj" \
 "./pinmux.obj" \
 "./smartconfig.obj" \
@@ -167,8 +166,8 @@ all: 3200ExositeDemo.out
 # Other Targets
 clean:
 	-$(RM) $(EXE_OUTPUTS__QUOTED)$(BIN_OUTPUTS__QUOTED)
-	-$(RM) "bma222drv.pp" "device_status.pp" "gpio_if.pp" "i2c_if.pp" "led_ring.pp" "main.pp" "pinmux.pp" "smartconfig.pp" "startup_ccs.pp" "tmp006drv.pp" "uart_if.pp" "exosite\source\exosite_http.pp" "exosite\source\utility.pp" "exosite\source\platform\exosite_pal_cc3200.pp" 
-	-$(RM) "bma222drv.obj" "device_status.obj" "gpio_if.obj" "i2c_if.obj" "led_ring.obj" "main.obj" "pinmux.obj" "smartconfig.obj" "startup_ccs.obj" "tmp006drv.obj" "uart_if.obj" "exosite\source\exosite_http.obj" "exosite\source\utility.obj" "exosite\source\platform\exosite_pal_cc3200.obj" 
+	-$(RM) "bma222drv.pp" "device_status.pp" "gpio_if.pp" "i2c_if.pp" "main.pp" "pinmux.pp" "smartconfig.pp" "startup_ccs.pp" "tmp006drv.pp" "uart_if.pp" "exosite\source\exosite_http.pp" "exosite\source\utility.pp" "exosite\source\platform\exosite_pal_cc3200.pp" 
+	-$(RM) "bma222drv.obj" "device_status.obj" "gpio_if.obj" "i2c_if.obj" "main.obj" "pinmux.obj" "smartconfig.obj" "startup_ccs.obj" "tmp006drv.obj" "uart_if.obj" "exosite\source\exosite_http.obj" "exosite\source\utility.obj" "exosite\source\platform\exosite_pal_cc3200.obj" 
 	-@echo 'Finished clean'
 	-@echo ' '
 

@@ -9,14 +9,14 @@ CMD_SRCS += \
 C_SRCS += \
 ../bma222drv.c \
 ../device_status.c \
-C:/ti/CC3200SDK_1.0.0/cc3200-sdk/example/common/gpio_if.c \
-C:/ti/CC3200SDK_1.0.0/cc3200-sdk/example/common/i2c_if.c \
+C:/ti/CC3200SDK_1.1.0/cc3200-sdk/example/common/gpio_if.c \
+C:/ti/CC3200SDK_1.1.0/cc3200-sdk/example/common/i2c_if.c \
 ../main.c \
 ../pinmux.c \
 ../smartconfig.c \
-C:/ti/CC3200SDK_1.0.0/cc3200-sdk/example/common/startup_ccs.c \
+C:/ti/CC3200SDK_1.1.0/cc3200-sdk/example/common/startup_ccs.c \
 ../tmp006drv.c \
-C:/ti/CC3200SDK_1.0.0/cc3200-sdk/example/common/uart_if.c 
+C:/ti/CC3200SDK_1.1.0/cc3200-sdk/example/common/uart_if.c 
 
 OBJS += \
 ./bma222drv.obj \
@@ -69,13 +69,13 @@ OBJS__QUOTED += \
 C_SRCS__QUOTED += \
 "../bma222drv.c" \
 "../device_status.c" \
-"C:/ti/CC3200SDK_1.0.0/cc3200-sdk/example/common/gpio_if.c" \
-"C:/ti/CC3200SDK_1.0.0/cc3200-sdk/example/common/i2c_if.c" \
+"C:/ti/CC3200SDK_1.1.0/cc3200-sdk/example/common/gpio_if.c" \
+"C:/ti/CC3200SDK_1.1.0/cc3200-sdk/example/common/i2c_if.c" \
 "../main.c" \
 "../pinmux.c" \
 "../smartconfig.c" \
-"C:/ti/CC3200SDK_1.0.0/cc3200-sdk/example/common/startup_ccs.c" \
+"C:/ti/CC3200SDK_1.1.0/cc3200-sdk/example/common/startup_ccs.c" \
 "../tmp006drv.c" \
-"C:/ti/CC3200SDK_1.0.0/cc3200-sdk/example/common/uart_if.c" 
+"C:/ti/CC3200SDK_1.1.0/cc3200-sdk/example/common/uart_if.c" 
 
 

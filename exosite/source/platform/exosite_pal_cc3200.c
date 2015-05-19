@@ -5,6 +5,8 @@
 
 #include "simplelink.h"
 #include "systick.h"
+#include "common.h"
+#include <uart_if.h>
 
 #include <typedefs.h>
 #include <platform/exosite_pal.h>
@@ -41,6 +43,7 @@ static void
 void
 	exosite_pal_init()
 {
+	long lRetVal = -1;
 	char buf[128];
 	int bufLen;
 	SlDateTime_t slDateTime;
@@ -63,6 +66,19 @@ void
 	          SL_DEVICE_GENERAL_CONFIGURATION_DATE_TIME,
 	          sizeof(SlDateTime_t),
 	          (_u8 *)(&slDateTime));
+
+	msTimer = 0;
+
+	//Because we use freertos, we just can register the timer to the task queue instead of using systick directly.
+    lRetVal = osi_TaskCreate(SysTickIntHandler, (signed char*)"SysTickIntHandler", \
+                                512, NULL, \
+                                1, NULL );
+
+    if(lRetVal < 0)
+    {
+        ERR_PRINT(lRetVal);
+        LOOP_FOREVER()
+    }
 
 	//SysTickIntRegister(SysTickIntHandler);
 	//SysTickPeriodSet(80000);
@@ -249,7 +265,11 @@ void
 static void
 	SysTickIntHandler()
 {
-	msTimer++;
+	while(1)
+	{
+		msTimer+=1;
+		osi_Sleep(1);
+	}
 }
 
 bool_t
@@ -257,8 +277,7 @@ bool_t
 {
 	long left = timer->endTime - msTimer;
 
-	return FALSE;
-	//return (left < 0);
+	return (left < 0);
 }
 
 
